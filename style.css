@@ -878,6 +878,48 @@ body {
     100%{
         left:110%;
     }
+    }
+    /* Ajuste para celulares */
+@media (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    header{
+        padding: 15px 5%;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px 40px;
+    }
+
+    .hero img{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .hero h1{
+        font-size: 32px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .cards{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+
 }
 
 
