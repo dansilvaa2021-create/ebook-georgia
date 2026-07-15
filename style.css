@@ -856,7 +856,8 @@ body {
 
     animation: caminhar 20s linear infinite;
 }
-}
+
+
 @keyframes premium {
     0%,100%{
         transform: translateY(0) scale(1);
