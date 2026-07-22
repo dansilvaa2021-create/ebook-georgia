@@ -1,0 +1,230 @@
+/* Premium CSS base - gerado para o projeto */
+/* Observação: este é um ponto de partida organizado. */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --bg:#050505;
+  --bg2:#111;
+  --gold:#d4af37;
+  --text:#fff;
+  --muted:#c8c8c8;
+}
+
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+.header{
+  position:fixed;
+  top:0;left:0;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:20px 8%;
+  background:rgba(0,0,0,.45);
+  backdrop-filter:blur(16px);
+  z-index:1000;
+}
+
+.nav{
+  width:100%;
+  max-width:1200px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{font-size:2rem;color:var(--gold);}
+
+.nav ul{
+  display:flex;
+  gap:28px;
+  list-style:none;
+}
+
+.nav a{
+  color:#fff;
+  text-decoration:none;
+  transition:.3s;
+}
+.nav a:hover{color:var(--gold);}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:120px 20px 60px;
+  position:relative;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  width:500px;height:500px;
+  background:var(--gold);
+  opacity:.08;
+  border-radius:50%;
+  filter:blur(120px);
+}
+
+.hero-content{max-width:900px;position:relative;z-index:1;}
+.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);margin:20px 0;}
+.hero p{color:var(--muted);line-height:1.8;}
+
+.btn-primary,.btn-secondary,.btn-card{
+  display:inline-block;
+  padding:15px 34px;
+  border-radius:999px;
+  text-decoration:none;
+  transition:.35s;
+}
+
+.btn-primary,.btn-card{
+  background:var(--gold);
+  color:#000;
+  font-weight:700;
+}
+.btn-primary:hover,.btn-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 30px rgba(212,175,55,.35);
+}
+
+.btn-secondary{
+  color:#fff;
+  border:1px solid rgba(255,255,255,.2);
+}
+.btn-secondary:hover{background:#fff;color:#000;}
+
+.section-header{text-align:center;padding:80px 20px 40px;}
+.section-header span{color:var(--gold);letter-spacing:4px;}
+.section-header h2{font-size:2.5rem;margin:15px 0;}
+.section-header p{max-width:700px;margin:auto;color:var(--muted);}
+
+.cards-grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+ gap:32px;
+ padding:0 8% 80px;
+}
+
+.premium-card{
+ background:linear-gradient(180deg,#171717,#0f0f0f);
+ border:1px solid rgba(255,255,255,.08);
+ border-radius:24px;
+ overflow:hidden;
+ transition:.35s;
+}
+.premium-card:hover{
+ transform:translateY(-10px);
+ box-shadow:0 20px 45px rgba(0,0,0,.5);
+}
+.card-image img{
+ width:100%;
+ height:300px;
+ object-fit:cover;
+}
+.card-content{padding:24px;}
+.status{
+ display:inline-block;
+ color:var(--gold);
+ margin-bottom:12px;
+}
+footer{
+ text-align:center;
+ padding:40px 20px;
+ border-top:1px solid rgba(255,255,255,.08);
+ color:#aaa;
+}
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.video-bg{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-2;
+
+}
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+    z-index:-1;
+    .hero .content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+}
+
+/* ==========================
+   IMAGEM DA CAPA - SOBRE
+========================== */
+
+.sobre-image {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.sobre-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px){
+
+    .sobre-image {
+        width: 90%;
+    }
+
+
+    .sobre-image img {
+        height: 690px;
+        border-radius: 25px;
+    }
+
+}
